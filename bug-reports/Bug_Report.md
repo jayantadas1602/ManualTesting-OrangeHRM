@@ -17,18 +17,17 @@
 | BUG_001 | Forgot password shows success for non-existent username | Login | Medium | P3 | Open |
 | BUG_002 | No account lockout after repeated failed login attempts | Login | Critical | P1 | Open |
 | BUG_003 | Time at Work widget shows zero without any indicator | Dashboard | Low | P4 | Open |
-| BUG_004 | SVG file accepted as employee profile photo | PIM | High | P2 | Open |
-| BUG_005 | Search results not cleared when Reset is clicked on specific filter combos | PIM | Medium | P3 | Open |
-| BUG_006 | Employee ID field accepts special characters | PIM | High | P2 | Open |
-| BUG_007 | Duplicate employee ID error message not descriptive | PIM | Medium | P3 | Open |
-| BUG_008 | Leave application allowed for past dates without warning | Leave | High | P2 | Open |
-| BUG_009 | Overlapping leave dates not validated on front end | Leave | Critical | P1 | Open |
-| BUG_010 | Leave balance shows stale data after entitlement changes | Leave | Medium | P3 | Open |
-| BUG_011 | Dashboard widget arrangement not preserved across sessions | Dashboard | Low | P4 | Open |
-| BUG_012 | Phone number field accepts alphabetic characters | PIM | High | P2 | Open |
-| BUG_013 | Apply button on Leave form active with empty mandatory fields | Leave | Medium | P3 | Open |
-| BUG_014 | No session timeout warning before auto logout | General | Medium | P3 | Open |
-| BUG_015 | Export shows 0 count in summary but exports full data | PIM | Medium | P3 | Open |
+| BUG_004 | Search results not cleared when Reset is clicked on specific filter combos | PIM | Medium | P3 | Open |
+| BUG_005 | Employee ID field accepts special characters | PIM | High | P2 | Open |
+| BUG_006 | Duplicate employee ID error message not descriptive | PIM | Medium | P3 | Open |
+| BUG_007 | Leave application allowed for past dates without warning | Leave | High | P2 | Open |
+| BUG_008 | Overlapping leave dates not validated on front end | Leave | Critical | P1 | Open |
+| BUG_009 | Leave balance shows stale data after entitlement changes | Leave | Medium | P3 | Open |
+| BUG_010 | Dashboard widget arrangement not preserved across sessions | Dashboard | Low | P4 | Open |
+| BUG_011 | Phone number field accepts alphabetic characters | PIM | High | P2 | Open |
+| BUG_012 | Apply button on Leave form active with empty mandatory fields | Leave | Medium | P3 | Open |
+| BUG_013 | No session timeout warning before auto logout | General | Medium | P3 | Open |
+| BUG_014 | Export shows 0 count in summary but exports full data | PIM | Medium | P3 | Open |
 
 ---
 
@@ -220,7 +219,7 @@ All filters are cleared and the full unfiltered employee list is restored.
 
 On Firefox, the Sub Unit field appeared reset in the UI but the displayed results were still filtered. Only after clicking Search again (with empty fields) did the full list appear.
 
-**Screenshots:** `screenshots/BUG_005_reset_subunit_filter_firefox.png`
+**Screenshots:** `screenshots/BUG_004_reset_subunit_filter_firefox.png`
 
 **Impact:**
 
@@ -267,7 +266,7 @@ Validation error: "Employee ID can only contain alphanumeric characters."
 
 Employee was saved with ID `EMP@#!001`. No validation error.
 
-**Screenshots:** `screenshots/BUG_006_employee_id_special_chars.png`
+**Screenshots:** `screenshots/BUG_005_employee_id_special_chars.png`
 
 **Impact:**
 
@@ -314,7 +313,7 @@ Error message: "Employee ID 0001 is already in use. Please enter a unique Employ
 
 Error message: "Employee Id already exists" — technically correct but doesn't specify which ID is conflicting, making it slightly unclear for admins managing large employee lists.
 
-**Screenshots:** `screenshots/BUG_007_duplicate_id_generic_error.png`
+**Screenshots:** `screenshots/BUG_006_duplicate_id_generic_error.png`
 
 **Impact:**
 
@@ -362,7 +361,7 @@ A warning dialog or inline message should appear: "You are applying leave for da
 
 The application was accepted and submitted without any warning. Status showed as "Pending Approval."
 
-**Screenshots:** `screenshots/BUG_008_past_date_leave_accepted.png`
+**Screenshots:** `screenshots/BUG_007_past_date_leave_accepted.png`
 
 **Impact:**
 
@@ -408,7 +407,7 @@ Step 3 should trigger a validation message: "You already have an existing leave 
 
 Application B was created without any error. Both applications now show in My Leave List with overlapping dates. An admin reviewing leave requests would have to manually identify and resolve the conflict.
 
-**Screenshots:** `screenshots/BUG_009_overlapping_leave_accepted.png`
+**Screenshots:** `screenshots/BUG_008_overlapping_leave_accepted.png`
 
 **Impact:**
 
@@ -457,7 +456,7 @@ The balance shown should immediately reflect the updated value (20 days).
 
 Balance still showed the old value (14 days) until the page was refreshed. After refresh, the new balance (20 days) appeared correctly.
 
-**Screenshots:** `screenshots/BUG_010_stale_leave_balance.png`
+**Screenshots:** `screenshots/BUG_009_stale_leave_balance.png`
 
 **Impact:**
 
@@ -504,7 +503,7 @@ Widget positions should be saved to the user's profile and persist across sessio
 
 All widgets returned to their default positions after re-login. The user's customisation was lost.
 
-**Screenshots:** `screenshots/BUG_011_widget_positions_not_saved.png`
+**Screenshots:** `screenshots/BUG_010_widget_positions_not_saved.png`
 
 **Impact:**
 
@@ -550,7 +549,7 @@ Validation error: "Please enter a valid phone number (digits only)."
 
 `CALL-ME-MAYBE` was accepted and saved as the Work Phone number. No error.
 
-**Screenshots:** `screenshots/BUG_012_phone_accepts_alphabets.png`
+**Screenshots:** `screenshots/BUG_011_phone_accepts_alphabets.png`
 
 **Impact:**
 
@@ -597,7 +596,7 @@ Apply button should be disabled (greyed out) with a tooltip "Please fill in all 
 
 Apply button is always enabled. Clicking it shows validation errors, which works, but the initial state of an always-enabled button is misleading.
 
-**Screenshots:** `screenshots/BUG_013_apply_button_always_enabled.png`
+**Screenshots:** `screenshots/BUG_012_apply_button_always_enabled.png`
 
 **Impact:**
 
@@ -643,7 +642,7 @@ A warning dialog should appear 2–3 minutes before the session expires: "Your s
 
 No warning was shown. After inactivity, the user was silently redirected to the login page. Any unsaved form data was lost.
 
-**Screenshots:** `screenshots/BUG_014_no_timeout_warning.png`
+**Screenshots:** `screenshots/BUG_013_no_timeout_warning.png`
 
 **Impact:**
 
@@ -690,7 +689,7 @@ The confirmation message or export summary should accurately reflect the number 
 
 The export confirmation briefly showed "0 records" before completing. The downloaded file contained all employee records correctly. The count display was misleading.
 
-**Screenshots:** `screenshots/BUG_015_export_count_mismatch.png`
+**Screenshots:** `screenshots/BUG_014_export_count_mismatch.png`
 
 **Impact:**
 
