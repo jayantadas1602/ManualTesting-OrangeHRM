@@ -120,6 +120,6 @@ This project was done as part of my QA portfolio to demonstrate my ability to:
 
 **Author:** Jayanta Das  
 **Role:** QA Engineer (Manual + Automation)  
-**LinkedIn:** [linkedin.com/in/your-profile](www.linkedin.com/in/jayanta99)  
-**GitHub:** [github.com/your-username]([https://github.com](https://github.com/jayantadas1602))  
+**LinkedIn:** [linkedin.com/in/jayanta99](www.linkedin.com/in/jayanta99)  
+**GitHub:** [github.com/jayantadas1602]([https://github.com](https://github.com/jayantadas1602))  
 **Testing Period:** March 10 – March 28, 2025
