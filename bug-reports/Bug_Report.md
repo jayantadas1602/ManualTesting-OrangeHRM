@@ -1,7 +1,7 @@
 # Bug Report — OrangeHRM Manual Testing Project
 
 **Project:** OrangeHRM Manual Testing  
-**Reported By:** [Jayanta Das] 
+**Reported By:** [Jayanta Das]
 **Total Bugs:** 7  
 **Critical:** 1 | **High:** 1 | **Medium:** 3 | **Low:** 2  
 **Application URL:** https://opensource-demo.orangehrmlive.com  
