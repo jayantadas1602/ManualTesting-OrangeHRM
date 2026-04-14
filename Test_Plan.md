@@ -1,7 +1,7 @@
 # Test Plan — OrangeHRM Manual Testing Project
 
 **Document Version:** 1.2  
-**Prepared By:** [Your Name]  
+**Prepared By:** Jayanta Das  
 **Reviewed By:** Self-review  
 **Date Created:** March 1, 2025  
 **Last Updated:** March 8, 2025  
