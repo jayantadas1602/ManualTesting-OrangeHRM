@@ -1,0 +1,21 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+~$*
+
+# Excel temp files
+*.xlk
+
+# Local notes (personal scratch notes not meant for the repo)
+notes.txt
+scratch.md
+personal_notes/
