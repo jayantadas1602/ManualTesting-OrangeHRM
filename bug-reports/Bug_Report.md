@@ -184,53 +184,6 @@ Add a helper message or a direct "Punch In" button inside the widget when no pun
 
 ---
 
-### BUG_004
-
-**Bug ID:** BUG_004  
-**Title:** SVG file accepted as employee profile photo  
-**Module:** PIM – Employee Management  
-**Severity:** High  
-**Priority:** P2 – High  
-**Reported By:** [Jayanta Das]  
-**Date Reported:** March 15, 2025  
-**Status:** Open  
-**Related Test Case:** TC_PIM_014  
-**Browser/OS:** Chrome 123.0 / Windows 11
-
----
-
-**Description:**
-
-The employee photo upload feature accepts `.svg` files despite SVG files being a known security risk. SVG files are XML-based and can contain embedded JavaScript, making them a potential vector for stored XSS (Cross-Site Scripting) attacks. The upload succeeds without any error message.
-
-**Steps to Reproduce:**
-
-1. Log in and navigate to PIM → Employee List
-2. Open any employee profile
-3. Click on the profile photo area and select **Change Photo**
-4. Browse and select a file with the `.svg` extension
-5. Click Save/Upload
-
-**Expected Result:**
-
-An error message should appear: "This file type is not allowed. Please upload a JPG, JPEG, PNG, or GIF image." The upload should be rejected.
-
-**Actual Result:**
-
-The SVG file was accepted without error. The profile photo area showed a blank/grey box (since SVG rendering without sanitisation is unpredictable). No warning was shown.
-
-**Screenshots:** `screenshots/BUG_004_svg_upload_accepted.png`
-
-**Impact:**
-
-**Security risk.** A maliciously crafted SVG file could execute JavaScript in the browser of any admin viewing the employee profile. This constitutes a stored XSS vulnerability. Should be fixed before any production deployment.
-
-**Suggested Fix:**
-
-Add `.svg` to the blocked file types list on the server side. Validate file type by reading the file's MIME type and first few bytes (magic bytes), not just the extension. Update the allowed types message to explicitly list: JPG, JPEG, PNG, GIF only.
-
----
-
 ### BUG_005
 
 **Bug ID:** BUG_005  
