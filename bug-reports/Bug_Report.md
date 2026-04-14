@@ -1,7 +1,7 @@
 # Bug Report — OrangeHRM Manual Testing Project
 
 **Project:** OrangeHRM Manual Testing  
-**Reported By:** [Your Name]  
+**Reported By:** [Jayanta Das]  
 **Testing Period:** March 10 – March 28, 2025  
 **Total Bugs:** 15  
 **Critical:** 2 | **High:** 5 | **Medium:** 6 | **Low:** 2  
@@ -43,7 +43,7 @@
 **Module:** Login  
 **Severity:** Medium  
 **Priority:** P3 – Medium  
-**Reported By:** [Your Name]  
+**Reported By:** [Jayanta Das]  
 **Date Reported:** March 11, 2025  
 **Status:** Open  
 **Related Test Case:** TC_LGN_009  
@@ -90,7 +90,7 @@ Show a clear error for invalid usernames, or standardise to a generic message li
 **Module:** Login  
 **Severity:** Critical  
 **Priority:** P1 – Critical  
-**Reported By:** [Your Name]  
+**Reported By:** [Jayanta Das]  
 **Date Reported:** March 11, 2025  
 **Status:** Open  
 **Related Test Case:** TC_LGN_010  
@@ -141,7 +141,7 @@ Implement account lockout after 5 failed attempts with a 15-minute cooldown. Alt
 **Module:** Dashboard  
 **Severity:** Low  
 **Priority:** P4 – Low  
-**Reported By:** [Your Name]  
+**Reported By:** [Jayanta Das]  
 **Date Reported:** March 12, 2025  
 **Status:** Open  
 **Related Test Case:** TC_DSH_004  
@@ -191,7 +191,7 @@ Add a helper message or a direct "Punch In" button inside the widget when no pun
 **Module:** PIM – Employee Management  
 **Severity:** High  
 **Priority:** P2 – High  
-**Reported By:** [Your Name]  
+**Reported By:** [Jayanta Das]  
 **Date Reported:** March 15, 2025  
 **Status:** Open  
 **Related Test Case:** TC_PIM_014  
@@ -238,7 +238,7 @@ Add `.svg` to the blocked file types list on the server side. Validate file type
 **Module:** PIM – Employee Management  
 **Severity:** Medium  
 **Priority:** P3 – Medium  
-**Reported By:** [Your Name]  
+**Reported By:** [Jayanta Das]  
 **Date Reported:** March 16, 2025  
 **Status:** Open  
 **Related Test Case:** TC_PIM_010  
@@ -286,7 +286,7 @@ Ensure the Reset button triggers a complete state reset including all internal f
 **Module:** PIM – Employee Management  
 **Severity:** High  
 **Priority:** P2 – High  
-**Reported By:** [Your Name]  
+**Reported By:** [Jayanta Das]  
 **Date Reported:** March 16, 2025  
 **Status:** Open  
 **Related Test Case:** TC_PIM_005  
@@ -333,7 +333,7 @@ Add a regex validator on the Employee ID field: `^[a-zA-Z0-9-]*$` (allow alphanu
 **Module:** PIM – Employee Management  
 **Severity:** Medium  
 **Priority:** P3 – Medium  
-**Reported By:** [Your Name]  
+**Reported By:** [Jayanta Das]  
 **Date Reported:** March 17, 2025  
 **Status:** Open  
 **Related Test Case:** TC_PIM_003  
@@ -380,7 +380,7 @@ Improve the error message to include the ID that's conflicting: "Employee ID '00
 **Module:** Leave Management  
 **Severity:** High  
 **Priority:** P2 – High  
-**Reported By:** [Your Name]  
+**Reported By:** [Jayanta Das]  
 **Date Reported:** March 21, 2025  
 **Status:** Open  
 **Related Test Case:** TC_LVE_004  
@@ -428,7 +428,7 @@ Add a front-end check: if `From Date < today`, show a confirmation dialog before
 **Module:** Leave Management  
 **Severity:** Critical  
 **Priority:** P1 – Critical  
-**Reported By:** [Your Name]  
+**Reported By:** [Jayanta Das]  
 **Date Reported:** March 22, 2025  
 **Status:** Open  
 **Related Test Case:** TC_LVE_006  
@@ -474,7 +474,7 @@ Before submitting a new leave application, check the employee's existing leave a
 **Module:** Leave Management  
 **Severity:** Medium  
 **Priority:** P3 – Medium  
-**Reported By:** [Your Name]  
+**Reported By:** [Jayanta Das]  
 **Date Reported:** March 23, 2025  
 **Status:** Open  
 **Related Test Case:** TC_LVE_012  
@@ -523,7 +523,7 @@ Fetch the leave balance dynamically each time the leave type selection changes i
 **Module:** Dashboard  
 **Severity:** Low  
 **Priority:** P4 – Low  
-**Reported By:** [Your Name]  
+**Reported By:** [Jayanta Das]  
 **Date Reported:** March 13, 2025  
 **Status:** Open  
 **Related Test Case:** N/A (found during exploratory testing)  
@@ -570,7 +570,7 @@ Save widget positions to the user's profile or browser localStorage when they ar
 **Module:** PIM – Employee Management  
 **Severity:** High  
 **Priority:** P2 – High  
-**Reported By:** [Your Name]  
+**Reported By:** [Jayanta Das]  
 **Date Reported:** March 17, 2025  
 **Status:** Open  
 **Related Test Case:** TC_PIM_015  
@@ -616,7 +616,7 @@ Add input validation: allow only digits, spaces, hyphens, plus signs, and parent
 **Module:** Leave Management  
 **Severity:** Medium  
 **Priority:** P3 – Medium  
-**Reported By:** [Your Name]  
+**Reported By:** [Jayanta Das]  
 **Date Reported:** March 24, 2025  
 **Status:** Open  
 **Related Test Case:** TC_LVE_013  
@@ -663,7 +663,7 @@ Disable the Apply button initially. Enable it reactively when the Leave Type dro
 **Module:** General / Security  
 **Severity:** Medium  
 **Priority:** P3 – Medium  
-**Reported By:** [Your Name]  
+**Reported By:** [Jayanta Das]  
 **Date Reported:** March 26, 2025  
 **Status:** Open  
 **Related Test Case:** N/A (found during extended exploratory session)  
@@ -709,7 +709,7 @@ Implement a session expiry warning modal with a countdown timer. Include a "Keep
 **Module:** PIM – Employee Management  
 **Severity:** Medium  
 **Priority:** P3 – Medium  
-**Reported By:** [Your Name]  
+**Reported By:** [Jayanta Das]  
 **Date Reported:** March 19, 2025  
 **Status:** Open  
 **Related Test Case:** TC_PIM_019  
