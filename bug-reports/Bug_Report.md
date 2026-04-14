@@ -1,10 +1,9 @@
 # Bug Report — OrangeHRM Manual Testing Project
 
 **Project:** OrangeHRM Manual Testing  
-**Reported By:** [Jayanta Das]  
-**Testing Period:** March 10 – March 28, 2025  
-**Total Bugs:** 15  
-**Critical:** 2 | **High:** 5 | **Medium:** 6 | **Low:** 2  
+**Reported By:** [Jayanta Das] 
+**Total Bugs:** 7  
+**Critical:** 1 | **High:** 1 | **Medium:** 3 | **Low:** 2  
 **Application URL:** https://opensource-demo.orangehrmlive.com  
 **Environment:** Chrome 123.0 / Windows 11
 
@@ -17,17 +16,11 @@
 | BUG_001 | Forgot password shows success for non-existent username | Login | Medium | P3 | Open |
 | BUG_002 | No account lockout after repeated failed login attempts | Login | Critical | P1 | Open |
 | BUG_003 | Time at Work widget shows zero without any indicator | Dashboard | Low | P4 | Open |
-| BUG_004 | Search results not cleared when Reset is clicked on specific filter combos | PIM | Medium | P3 | Open |
-| BUG_005 | Employee ID field accepts special characters | PIM | High | P2 | Open |
-| BUG_006 | Duplicate employee ID error message not descriptive | PIM | Medium | P3 | Open |
-| BUG_007 | Leave application allowed for past dates without warning | Leave | High | P2 | Open |
-| BUG_008 | Overlapping leave dates not validated on front end | Leave | Critical | P1 | Open |
-| BUG_009 | Leave balance shows stale data after entitlement changes | Leave | Medium | P3 | Open |
-| BUG_010 | Dashboard widget arrangement not preserved across sessions | Dashboard | Low | P4 | Open |
-| BUG_011 | Phone number field accepts alphabetic characters | PIM | High | P2 | Open |
-| BUG_012 | Apply button on Leave form active with empty mandatory fields | Leave | Medium | P3 | Open |
-| BUG_013 | No session timeout warning before auto logout | General | Medium | P3 | Open |
-| BUG_014 | Export shows 0 count in summary but exports full data | PIM | Medium | P3 | Open |
+| BUG_004 | Employee ID field accepts special characters | PIM | High | P2 | Open |
+| BUG_005 | Duplicate employee ID error message not descriptive | PIM | Medium | P3 | Open |
+| BUG_006 | Dashboard widget arrangement not preserved across sessions | Dashboard | Low | P4 | Open |
+| BUG_007 | No session timeout warning before auto logout | General | Medium | P3 | Open |
+
 
 ---
 
@@ -42,8 +35,7 @@
 **Module:** Login  
 **Severity:** Medium  
 **Priority:** P3 – Medium  
-**Reported By:** [Jayanta Das]  
-**Date Reported:** March 11, 2025  
+**Reported By:** [Jayanta Das]   
 **Status:** Open  
 **Related Test Case:** TC_LGN_009  
 **Browser/OS:** Chrome 123.0 / Windows 11
@@ -89,8 +81,7 @@ Show a clear error for invalid usernames, or standardise to a generic message li
 **Module:** Login  
 **Severity:** Critical  
 **Priority:** P1 – Critical  
-**Reported By:** [Jayanta Das]  
-**Date Reported:** March 11, 2025  
+**Reported By:** [Jayanta Das]   
 **Status:** Open  
 **Related Test Case:** TC_LGN_010  
 **Browser/OS:** Chrome 123.0 / Windows 11
@@ -140,8 +131,7 @@ Implement account lockout after 5 failed attempts with a 15-minute cooldown. Alt
 **Module:** Dashboard  
 **Severity:** Low  
 **Priority:** P4 – Low  
-**Reported By:** [Jayanta Das]  
-**Date Reported:** March 12, 2025  
+**Reported By:** [Jayanta Das]    
 **Status:** Open  
 **Related Test Case:** TC_DSH_004  
 **Browser/OS:** Chrome 123.0 / Windows 11
@@ -183,63 +173,14 @@ Add a helper message or a direct "Punch In" button inside the widget when no pun
 
 ---
 
-### BUG_005
+### BUG_004
 
-**Bug ID:** BUG_005  
-**Title:** Employee search results not cleared correctly when Reset is clicked with active Sub Unit filter  
-**Module:** PIM – Employee Management  
-**Severity:** Medium  
-**Priority:** P3 – Medium  
-**Reported By:** [Jayanta Das]  
-**Date Reported:** March 16, 2025  
-**Status:** Open  
-**Related Test Case:** TC_PIM_010  
-**Browser/OS:** Firefox 124.0 / Windows 11
-
----
-
-**Description:**
-
-When the "Sub Unit" filter is selected along with a name filter and the user clicks Reset, the Sub Unit dropdown resets visually but the search results still appear to be filtered by sub unit. This behaviour was observed specifically on Firefox. Chrome did not show the same inconsistency.
-
-**Steps to Reproduce:**
-
-1. Navigate to PIM → Employee List on **Firefox**
-2. Enter a partial name in the Employee Name field
-3. Select a Sub Unit from the Sub Unit dropdown
-4. Click Search — note the filtered results
-5. Click Reset
-6. Observe the results — the name field clears but the sub unit filter may still be applied to the displayed results
-
-**Expected Result:**
-
-All filters are cleared and the full unfiltered employee list is restored.
-
-**Actual Result:**
-
-On Firefox, the Sub Unit field appeared reset in the UI but the displayed results were still filtered. Only after clicking Search again (with empty fields) did the full list appear.
-
-**Screenshots:** `screenshots/BUG_004_reset_subunit_filter_firefox.png`
-
-**Impact:**
-
-Medium — affects users on Firefox who may believe they're seeing all employees when they're actually seeing a filtered subset. Could lead to "missing employee" confusion.
-
-**Suggested Fix:**
-
-Ensure the Reset button triggers a complete state reset including all internal filter state, not just the visible UI state. After reset, auto-execute a fresh search query with no filters.
-
----
-
-### BUG_006
-
-**Bug ID:** BUG_006  
+**Bug ID:** BUG_004  
 **Title:** Employee ID field accepts special characters without validation  
 **Module:** PIM – Employee Management  
 **Severity:** High  
 **Priority:** P2 – High  
 **Reported By:** [Jayanta Das]  
-**Date Reported:** March 16, 2025  
 **Status:** Open  
 **Related Test Case:** TC_PIM_005  
 **Browser/OS:** Chrome 123.0 / Windows 11
@@ -266,7 +207,7 @@ Validation error: "Employee ID can only contain alphanumeric characters."
 
 Employee was saved with ID `EMP@#!001`. No validation error.
 
-**Screenshots:** `screenshots/BUG_005_employee_id_special_chars.png`
+**Screenshots:** `screenshots/BUG_004_employee_id_special_chars.png`
 
 **Impact:**
 
@@ -278,15 +219,14 @@ Add a regex validator on the Employee ID field: `^[a-zA-Z0-9-]*$` (allow alphanu
 
 ---
 
-### BUG_007
+### BUG_005
 
-**Bug ID:** BUG_007  
+**Bug ID:** BUG_005  
 **Title:** Duplicate Employee ID error message is not descriptive  
 **Module:** PIM – Employee Management  
 **Severity:** Medium  
 **Priority:** P3 – Medium  
 **Reported By:** [Jayanta Das]  
-**Date Reported:** March 17, 2025  
 **Status:** Open  
 **Related Test Case:** TC_PIM_003  
 **Browser/OS:** Chrome 123.0 / Windows 11
@@ -313,7 +253,7 @@ Error message: "Employee ID 0001 is already in use. Please enter a unique Employ
 
 Error message: "Employee Id already exists" — technically correct but doesn't specify which ID is conflicting, making it slightly unclear for admins managing large employee lists.
 
-**Screenshots:** `screenshots/BUG_006_duplicate_id_generic_error.png`
+**Screenshots:** `screenshots/BUG_005_duplicate_id_generic_error.png`
 
 **Impact:**
 
@@ -325,15 +265,14 @@ Improve the error message to include the ID that's conflicting: "Employee ID '00
 
 ---
 
-### BUG_011
+### BUG_006
 
-**Bug ID:** BUG_011  
+**Bug ID:** BUG_006 
 **Title:** Dashboard widget arrangement not preserved after logout and re-login  
 **Module:** Dashboard  
 **Severity:** Low  
 **Priority:** P4 – Low  
-**Reported By:** [Jayanta Das]  
-**Date Reported:** March 13, 2025  
+**Reported By:** [Jayanta Das]   
 **Status:** Open  
 **Related Test Case:** N/A (found during exploratory testing)  
 **Browser/OS:** Chrome 123.0 / Windows 11
@@ -360,7 +299,7 @@ Widget positions should be saved to the user's profile and persist across sessio
 
 All widgets returned to their default positions after re-login. The user's customisation was lost.
 
-**Screenshots:** `screenshots/BUG_010_widget_positions_not_saved.png`
+**Screenshots:** `screenshots/BUG_006_widget_positions_not_saved.png`
 
 **Impact:**
 
@@ -372,110 +311,16 @@ Save widget positions to the user's profile or browser localStorage when they ar
 
 ---
 
-### BUG_012
+### BUG_007
 
-**Bug ID:** BUG_012  
-**Title:** Phone number field in Contact Details accepts alphabetic characters  
-**Module:** PIM – Employee Management  
-**Severity:** High  
-**Priority:** P2 – High  
-**Reported By:** [Jayanta Das]  
-**Date Reported:** March 17, 2025  
-**Status:** Open  
-**Related Test Case:** TC_PIM_015  
-**Browser/OS:** Chrome 123.0 / Windows 11
-
----
-
-**Description:**
-
-The Work Phone and Mobile fields in the employee Contact Details tab accept and save alphabetic characters without any validation. Phone number fields should only accept numeric digits along with standard formatting characters (+, -, (, )).
-
-**Steps to Reproduce:**
-
-1. Navigate to any employee profile in PIM
-2. Click on the **Contact Details** tab
-3. In the Work Phone field, type: `CALL-ME-MAYBE`
-4. Click **Save**
-
-**Expected Result:**
-
-Validation error: "Please enter a valid phone number (digits only)."
-
-**Actual Result:**
-
-`CALL-ME-MAYBE` was accepted and saved as the Work Phone number. No error.
-
-**Screenshots:** `screenshots/BUG_011_phone_accepts_alphabets.png`
-
-**Impact:**
-
-High data quality impact. Nonsensical phone numbers saved in the system make the data unreliable for HR operations, payroll, emergency contact lookup, and any system that integrates with employee contact data.
-
-**Suggested Fix:**
-
-Add input validation: allow only digits, spaces, hyphens, plus signs, and parentheses. Limit field length to 15 characters (international standard). Regex: `^[0-9+\-() ]{7,15}$`.
-
----
-
-### BUG_013
-
-**Bug ID:** BUG_013  
-**Title:** Apply button on Leave form remains active when mandatory fields are empty  
-**Module:** Leave Management  
-**Severity:** Medium  
-**Priority:** P3 – Medium  
-**Reported By:** [Jayanta Das]  
-**Date Reported:** March 24, 2025  
-**Status:** Open  
-**Related Test Case:** TC_LVE_013  
-**Browser/OS:** Chrome 123.0 / Windows 11
-
----
-
-**Description:**
-
-The "Apply" button on the Leave application form is always active (enabled) regardless of whether mandatory fields have been filled. Clicking it with empty fields does trigger validation messages, but the UX would be better if the button were disabled until minimum required fields are completed.
-
-**Steps to Reproduce:**
-
-1. Navigate to Leave → Apply
-2. Do not fill any fields
-3. Observe the Apply button — it is enabled
-4. Click Apply
-5. Observe the validation errors
-
-**Expected Result:**
-
-Apply button should be disabled (greyed out) with a tooltip "Please fill in all required fields" until Leave Type and date fields are filled.
-
-**Actual Result:**
-
-Apply button is always enabled. Clicking it shows validation errors, which works, but the initial state of an always-enabled button is misleading.
-
-**Screenshots:** `screenshots/BUG_012_apply_button_always_enabled.png`
-
-**Impact:**
-
-Low UX issue. Not a functional bug. Current behaviour (showing validation on click) is acceptable as a fallback.
-
-**Suggested Fix:**
-
-Disable the Apply button initially. Enable it reactively when the Leave Type dropdown and both date fields have valid values.
-
----
-
-### BUG_014
-
-**Bug ID:** BUG_014  
+**Bug ID:** BUG_007
 **Title:** No session timeout warning before automatic logout  
 **Module:** General / Security  
 **Severity:** Medium  
 **Priority:** P3 – Medium  
-**Reported By:** [Jayanta Das]  
-**Date Reported:** March 26, 2025  
+**Reported By:** [Jayanta Das]    
 **Status:** Open  
-**Related Test Case:** N/A (found during extended exploratory session)  
+**Related Test Case:** N/A (found during exploratory session)  
 **Browser/OS:** Chrome 123.0 / Windows 11
 
 ---
@@ -499,7 +344,7 @@ A warning dialog should appear 2–3 minutes before the session expires: "Your s
 
 No warning was shown. After inactivity, the user was silently redirected to the login page. Any unsaved form data was lost.
 
-**Screenshots:** `screenshots/BUG_013_no_timeout_warning.png`
+**Screenshots:** `screenshots/BUG_007_no_timeout_warning.png`
 
 **Impact:**
 
@@ -508,53 +353,6 @@ Medium. Loss of unsaved work is frustrating for users filling in long forms (lik
 **Suggested Fix:**
 
 Implement a session expiry warning modal with a countdown timer. Include a "Keep me logged in" option that refreshes the session token.
-
----
-
-### BUG_015
-
-**Bug ID:** BUG_015  
-**Title:** Export employee list shows "0 Records" in summary but exports full data  
-**Module:** PIM – Employee Management  
-**Severity:** Medium  
-**Priority:** P3 – Medium  
-**Reported By:** [Jayanta Das]  
-**Date Reported:** March 19, 2025  
-**Status:** Open  
-**Related Test Case:** TC_PIM_019  
-**Browser/OS:** Chrome 123.0 / Windows 11
-
----
-
-**Description:**
-
-When using the Export functionality on the Employee List without applying any filters, the export confirmation message briefly shows "0 records exported" or the count doesn't match the actual data in the downloaded file. The downloaded CSV contains the correct full employee list, but the on-screen count is misleading.
-
-**Steps to Reproduce:**
-
-1. Navigate to PIM → Employee List
-2. Do not apply any filters
-3. Click the Export (download) button
-4. Observe any confirmation message or record count shown before/after the download
-5. Open the downloaded CSV and count the records
-
-**Expected Result:**
-
-The confirmation message or export summary should accurately reflect the number of records exported (e.g., "Exported 25 employees").
-
-**Actual Result:**
-
-The export confirmation briefly showed "0 records" before completing. The downloaded file contained all employee records correctly. The count display was misleading.
-
-**Screenshots:** `screenshots/BUG_014_export_count_mismatch.png`
-
-**Impact:**
-
-Medium. Users might question the integrity of the export and re-run it multiple times, creating unnecessary load. The actual data in the file is correct, but the misleading count erodes trust in the feature.
-
-**Suggested Fix:**
-
-Fix the export summary logic to reflect the actual count of records written to the export file, not a pre-filter count that may be uninitialized.
 
 ---
 
