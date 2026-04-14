@@ -1,7 +1,7 @@
 # Requirements Traceability Matrix (RTM)
 
 **Project:** OrangeHRM Manual Testing  
-**Prepared By:** [Your Name]  
+**Prepared By:** Jayanta Das  
 **Date:** April 2, 2025  
 **Version:** 1.0
 
