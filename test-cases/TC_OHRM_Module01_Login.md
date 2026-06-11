@@ -1,12 +1,12 @@
 # Test Cases — Module 01: Login & Authentication
 
 **Module:** Login & Authentication  
-**Tester:** [Your Name]  
+**Tester:** [Jayanta Das]  
 **Execution Date:** March 10–11, 2025  
-**Browser:** Chrome 123.0 (primary), Firefox 124.0 (cross-check)  
+**Browser:** Chrome 149.0 (primary), Brave 1.91 (cross-check)  
 **Application URL:** https://opensource-demo.orangehrmlive.com  
-**Total Test Cases:** 12  
-**Pass:** 9 | **Fail:** 2 | **Blocked:** 1
+**Total Test Cases:** 13  
+**Pass:** 10 | **Fail:** 2 | **Blocked:** 1
 
 ---
 
@@ -22,11 +22,11 @@ One interesting observation: the error messages on login failure are generic ("I
 
 ---
 
-### TC_LGN_001 — Valid login with correct credentials
+### TC_OHRM_LGN_001 — Valid login with correct credentials
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_LGN_001 |
+| **Test Case ID** | TC_OHRM_LGN_001 |
 | **Title** | Verify successful login with valid admin credentials |
 | **Module** | Login |
 | **Priority** | P1 – Critical |
@@ -51,11 +51,11 @@ One interesting observation: the error messages on login failure are generic ("I
 
 ---
 
-### TC_LGN_002 — Invalid login with wrong password
+### TC_OHRM_LGN_002 — Invalid login with wrong password
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_LGN_002 |
+| **Test Case ID** | TC_OHRM_LGN_002 |
 | **Title** | Verify login fails with correct username and incorrect password |
 | **Module** | Login |
 | **Priority** | P1 – Critical |
@@ -71,7 +71,7 @@ One interesting observation: the error messages on login failure are generic ("I
 
 **Expected Result:** Login is rejected. An error message is displayed (e.g., "Invalid credentials"). User remains on the login page.
 
-**Actual Result:** Error message "Invalid credentials" appeared below the login form in red. User was not logged in and remained on the login page.
+**Actual Result:** Error message "Invalid credentials" appeared above the login form in red. User was not logged in and remained on the login page.
 
 **Status:** ✅ Pass
 
@@ -79,11 +79,11 @@ One interesting observation: the error messages on login failure are generic ("I
 
 ---
 
-### TC_LGN_003 — Invalid login with wrong username
+### TC_OHRM_LGN_003 — Invalid login with wrong username
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_LGN_003 |
+| **Test Case ID** | TC_OHRM_LGN_003 |
 | **Title** | Verify login fails with incorrect username and correct password |
 | **Module** | Login |
 | **Priority** | P1 – Critical |
@@ -103,15 +103,15 @@ One interesting observation: the error messages on login failure are generic ("I
 
 **Status:** ✅ Pass
 
-**Remarks:** Same generic error as TC_LGN_002 — consistent behaviour.
+**Remarks:** Same generic error as TC_OHRM_LGN_002 — consistent behaviour.
 
 ---
 
-### TC_LGN_004 — Invalid login with both fields incorrect
+### TC_OHRM_LGN_004 — Invalid login with both fields incorrect
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_LGN_004 |
+| **Test Case ID** | TC_OHRM_LGN_004 |
 | **Title** | Verify login fails when both username and password are incorrect |
 | **Module** | Login |
 | **Priority** | P2 – High |
@@ -127,17 +127,17 @@ One interesting observation: the error messages on login failure are generic ("I
 
 **Expected Result:** Login rejected. Error message shown. User stays on login page.
 
-**Actual Result:** Behaved as expected. Same "Invalid credentials" message shown.
+**Actual Result:** Behaved as expected. Same "Invalid credentials" red error message shown.
 
 **Status:** ✅ Pass
 
 ---
 
-### TC_LGN_005 — Login with empty Username field
+### TC_OHRM_LGN_005 — Login with empty Username field
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_LGN_005 |
+| **Test Case ID** | TC_OHRM_LGN_005 |
 | **Title** | Verify validation error when username is left empty |
 | **Module** | Login |
 | **Priority** | P2 – High |
@@ -159,11 +159,11 @@ One interesting observation: the error messages on login failure are generic ("I
 
 ---
 
-### TC_LGN_006 — Login with empty Password field
+### TC_OHRM_LGN_006 — Login with empty Password field
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_LGN_006 |
+| **Test Case ID** | TC_OHRM_LGN_006 |
 | **Title** | Verify validation error when password is left empty |
 | **Module** | Login |
 | **Priority** | P2 – High |
@@ -185,11 +185,11 @@ One interesting observation: the error messages on login failure are generic ("I
 
 ---
 
-### TC_LGN_007 — Login with both fields empty
+### TC_OHRM_LGN_007 — Login with both fields empty
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_LGN_007 |
+| **Test Case ID** | TC_OHRM_LGN_007 |
 | **Title** | Verify validation errors when both fields are empty |
 | **Module** | Login |
 | **Priority** | P2 – High |
@@ -210,11 +210,11 @@ One interesting observation: the error messages on login failure are generic ("I
 
 ---
 
-### TC_LGN_008 — Forgot password link is present and navigates correctly
+### TC_OHRM_LGN_008 — Forgot password link is present and navigates correctly
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_LGN_008 |
+| **Test Case ID** | TC_OHRM_LGN_008 |
 | **Title** | Verify "Forgot your password?" link is visible and functional |
 | **Module** | Login |
 | **Priority** | P3 – Medium |
@@ -233,15 +233,15 @@ One interesting observation: the error messages on login failure are generic ("I
 
 **Status:** ✅ Pass
 
-**Remarks:** End-to-end password reset flow could not be verified since the demo does not send real emails. See TC_LGN_009 for partial validation.
+**Remarks:** End-to-end password reset flow could not be verified since the demo does not send real emails. See TC_OHRM_LGN_009 for partial validation.
 
 ---
 
-### TC_LGN_009 — Forgot password flow with unregistered email
+### TC_OHRM_LGN_009 — Forgot password flow with unregistered email
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_LGN_009 |
+| **Test Case ID** | TC_OHRM_LGN_009 |
 | **Title** | Verify forgot password with unregistered username shows appropriate message |
 | **Module** | Login |
 | **Priority** | P3 – Medium |
@@ -266,11 +266,11 @@ One interesting observation: the error messages on login failure are generic ("I
 
 ---
 
-### TC_LGN_010 — Account lockout after multiple failed login attempts
+### TC_OHRM_LGN_010 — Account lockout after multiple failed login attempts
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_LGN_010 |
+| **Test Case ID** | TC_OHRM_LGN_010 |
 | **Title** | Verify account gets locked after repeated failed login attempts |
 | **Module** | Login |
 | **Priority** | P1 – Critical |
@@ -297,11 +297,11 @@ One interesting observation: the error messages on login failure are generic ("I
 
 ---
 
-### TC_LGN_011 — SQL injection attempt in username field
+### TC_OHRM_LGN_011 — SQL injection attempt in username field
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_LGN_011 |
+| **Test Case ID** | TC_OHRM_LGN_011 |
 | **Title** | Verify application is protected against basic SQL injection in login |
 | **Module** | Login |
 | **Priority** | P2 – High |
@@ -325,11 +325,11 @@ One interesting observation: the error messages on login failure are generic ("I
 
 ---
 
-### TC_LGN_012 — Logout functionality
+### TC_OHRM_LGN_012 — Logout functionality
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_LGN_012 |
+| **Test Case ID** | TC_OHRM_LGN_012 |
 | **Title** | Verify user can successfully log out from the application |
 | **Module** | Login |
 | **Priority** | P1 – Critical |
@@ -354,11 +354,11 @@ One interesting observation: the error messages on login failure are generic ("I
 
 ---
 
-### TC_LGN_013 — [BLOCKED] Password reset email delivery
+### TC_OHRM_LGN_013 — [BLOCKED] Password reset email delivery
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_LGN_013 |
+| **Test Case ID** | TC_OHRM_LGN_013 |
 | **Title** | Verify password reset email is received after reset request |
 | **Module** | Login |
 | **Priority** | P2 – High |
