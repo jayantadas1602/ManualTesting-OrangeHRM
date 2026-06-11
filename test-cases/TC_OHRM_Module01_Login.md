@@ -1,7 +1,7 @@
 # Test Cases — Module 01: Login & Authentication
 
 **Module:** Login & Authentication  
-**Tester:** [Jayanta Das]  
+**Tester:** Jayanta Das  
 **Execution Date:** March 10–11, 2026  
 **Browser:** Chrome 149.0 (primary), Brave 1.91 (cross-check)  
 **Application URL:** https://opensource-demo.orangehrmlive.com  
