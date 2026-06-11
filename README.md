@@ -5,8 +5,8 @@
 ---
 
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
-![Test Cases](https://img.shields.io/badge/Test%20Cases-55-blue)
-![Passed](https://img.shields.io/badge/Passed-42-brightgreen)
+![Test Cases](https://img.shields.io/badge/Test%20Cases-56-blue)
+![Passed](https://img.shields.io/badge/Passed-43-brightgreen)
 ![Failed](https://img.shields.io/badge/Failed-10-red)
 ![Blocked](https://img.shields.io/badge/Blocked-3-yellow)
 ![Bugs](https://img.shields.io/badge/Bugs%20Reported-15-critical)
@@ -46,7 +46,7 @@ This project was done as part of my QA portfolio to demonstrate my ability to:
 | 2 | Dashboard | 8 | 7 | 1 | 0 |
 | 3 | Employee Management (PIM) | 20 | 15 | 4 | 1 |
 | 4 | Leave Management | 15 | 11 | 3 | 1 |
-| **Total** | | **55** | **43** | **10** | **3** |
+| **Total** | | **56** | **43** | **10** | **3** |
 
 ---
 
