@@ -1,9 +1,9 @@
 # Test Cases — Module 03: Employee Management (PIM)
 
 **Module:** Employee Management (PIM — Personal Information Management)  
-**Tester:** [Your Name]  
-**Execution Date:** March 14–20, 2025  
-**Browser:** Chrome 123.0 (primary), Firefox 124.0 (cross-check)  
+**Tester:** [Jayanta Das]  
+**Execution Date:** April 10–15, 2026  
+**Browser:** Chrome 149.0 (primary), Brave 1.91 (cross-check)  
 **Application URL:** https://opensource-demo.orangehrmlive.com  
 **Total Test Cases:** 20  
 **Pass:** 15 | **Fail:** 4 | **Blocked:** 1
@@ -24,11 +24,11 @@ Four failures were found — the most notable being that the phone number field 
 
 ---
 
-### TC_PIM_001 — Navigate to PIM module
+### TC_OHRM_PIM_001 — Navigate to PIM module
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_PIM_001 |
+| **Test Case ID** | TC_OHRM_PIM_001 |
 | **Title** | Verify PIM module loads correctly from the navigation menu |
 | **Module** | Employee Management (PIM) |
 | **Priority** | P1 – Critical |
@@ -48,11 +48,11 @@ Four failures were found — the most notable being that the phone number field 
 
 ---
 
-### TC_PIM_002 — Employee list displays existing records
+### TC_OHRM_PIM_002 — Employee list displays existing records
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_PIM_002 |
+| **Test Case ID** | TC_OHRM_PIM_002 |
 | **Title** | Verify the employee list shows existing employee records |
 | **Module** | Employee Management (PIM) |
 | **Priority** | P1 – Critical |
@@ -73,11 +73,11 @@ Four failures were found — the most notable being that the phone number field 
 
 ---
 
-### TC_PIM_003 — Add new employee with valid mandatory data
+### TC_OHRM_PIM_003 — Add new employee with valid mandatory data
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_PIM_003 |
+| **Test Case ID** | TC_OHRM_PIM_003 |
 | **Title** | Verify a new employee can be added with all mandatory fields filled |
 | **Module** | Employee Management (PIM) |
 | **Priority** | P1 – Critical |
@@ -104,11 +104,11 @@ Four failures were found — the most notable being that the phone number field 
 
 ---
 
-### TC_PIM_004 — Add new employee with empty mandatory fields
+### TC_OHRM_PIM_004 — Add new employee with empty mandatory fields
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_PIM_004 |
+| **Test Case ID** | TC_OHRM_PIM_004 |
 | **Title** | Verify validation messages appear when mandatory fields are empty |
 | **Module** | Employee Management (PIM) |
 | **Priority** | P1 – Critical |
@@ -129,11 +129,11 @@ Four failures were found — the most notable being that the phone number field 
 
 ---
 
-### TC_PIM_005 — Employee ID field accepts special characters
+### TC_OHRM_PIM_005 — Employee ID field accepts special characters
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_PIM_005 |
+| **Test Case ID** | TC_OHRM_PIM_005 |
 | **Title** | Verify that the Employee ID field rejects special characters |
 | **Module** | Employee Management (PIM) |
 | **Priority** | P2 – High |
@@ -160,11 +160,11 @@ Four failures were found — the most notable being that the phone number field 
 
 ---
 
-### TC_PIM_006 — Search employee by name
+### TC_OHRM_PIM_006 — Search employee by name
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_PIM_006 |
+| **Test Case ID** | TC_OHRM_PIM_006 |
 | **Title** | Verify employee search by name returns matching records |
 | **Module** | Employee Management (PIM) |
 | **Priority** | P2 – High |
@@ -185,21 +185,21 @@ Four failures were found — the most notable being that the phone number field 
 
 ---
 
-### TC_PIM_007 — Search employee by Employee ID
+### TC_OHRM_PIM_007 — Search employee by Employee ID
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_PIM_007 |
+| **Test Case ID** | TC_OHRM_PIM_007 |
 | **Title** | Verify employee search by Employee ID returns the correct record |
 | **Module** | Employee Management (PIM) |
 | **Priority** | P2 – High |
 | **Prerequisites** | At least one employee exists with a known ID |
-| **Test Data** | Employee ID: the auto-generated ID from TC_PIM_003 |
+| **Test Data** | Employee ID: the auto-generated ID from TC_OHRM_PIM_003 |
 
 **Steps:**
 
 1. Navigate to PIM → Employee List
-2. Enter the Employee ID of the employee created in TC_PIM_003 in the Employee ID search field
+2. Enter the Employee ID of the employee created in TC_OHRM_PIM_003 in the Employee ID search field
 3. Click **Search**
 
 **Expected Result:** Only the employee with the matching ID is shown in the results list.
@@ -210,11 +210,11 @@ Four failures were found — the most notable being that the phone number field 
 
 ---
 
-### TC_PIM_008 — Search with no matching results
+### TC_OHRM_PIM_008 — Search with no matching results
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_PIM_008 |
+| **Test Case ID** | TC_OHRM_PIM_008 |
 | **Title** | Verify appropriate message shown when search returns no results |
 | **Module** | Employee Management (PIM) |
 | **Priority** | P3 – Medium |
@@ -235,11 +235,11 @@ Four failures were found — the most notable being that the phone number field 
 
 ---
 
-### TC_PIM_009 — Filter employees by Employment Status
+### TC_OHRM_PIM_009 — Filter employees by Employment Status
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_PIM_009 |
+| **Test Case ID** | TC_OHRM_PIM_009 |
 | **Title** | Verify the Employment Status filter returns filtered results |
 | **Module** | Employee Management (PIM) |
 | **Priority** | P3 – Medium |
@@ -261,11 +261,11 @@ Four failures were found — the most notable being that the phone number field 
 
 ---
 
-### TC_PIM_010 — Reset search filters
+### TC_OHRM_PIM_010 — Reset search filters
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_PIM_010 |
+| **Test Case ID** | TC_OHRM_PIM_010 |
 | **Title** | Verify the Reset button clears all applied filters |
 | **Module** | Employee Management (PIM) |
 | **Priority** | P3 – Medium |
@@ -287,11 +287,11 @@ Four failures were found — the most notable being that the phone number field 
 
 ---
 
-### TC_PIM_011 — Edit employee personal information
+### TC_OHRM_PIM_011 — Edit employee personal information
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_PIM_011 |
+| **Test Case ID** | TC_OHRM_PIM_011 |
 | **Title** | Verify employee personal details can be updated and saved |
 | **Module** | Employee Management (PIM) |
 | **Priority** | P2 – High |
@@ -300,7 +300,7 @@ Four failures were found — the most notable being that the phone number field 
 
 **Steps:**
 
-1. Open the profile of the employee created in TC_PIM_003 (Ravi Sharma)
+1. Open the profile of the employee created in TC_OHRM_PIM_003 (Ravi Sharma)
 2. Click on the **Personal Details** tab
 3. Enter `DL-MH-2024-001234` in the Driver's License Number field
 4. Select `15-Jun-1990` as Date of Birth using the date picker
@@ -316,11 +316,11 @@ Four failures were found — the most notable being that the phone number field 
 
 ---
 
-### TC_PIM_012 — Upload valid profile photo
+### TC_OHRM_PIM_012 — Upload valid profile photo
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_PIM_012 |
+| **Test Case ID** | TC_OHRM_PIM_012 |
 | **Title** | Verify a valid JPG/PNG image can be uploaded as employee photo |
 | **Module** | Employee Management (PIM) |
 | **Priority** | P2 – High |
@@ -343,11 +343,11 @@ Four failures were found — the most notable being that the phone number field 
 
 ---
 
-### TC_PIM_013 — Upload invalid file type as profile photo
+### TC_OHRM_PIM_013 — Upload invalid file type as profile photo
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_PIM_013 |
+| **Test Case ID** | TC_OHRM_PIM_013 |
 | **Title** | Verify that uploading an unsupported file type as photo is rejected |
 | **Module** | Employee Management (PIM) |
 | **Priority** | P2 – High |
@@ -369,11 +369,11 @@ Four failures were found — the most notable being that the phone number field 
 
 ---
 
-### TC_PIM_014 — Upload SVG file as profile photo
+### TC_OHRM_PIM_014 — Upload SVG file as profile photo
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_PIM_014 |
+| **Test Case ID** | TC_OHRM_PIM_014 |
 | **Title** | Verify SVG file upload is rejected for profile photo |
 | **Module** | Employee Management (PIM) |
 | **Priority** | P2 – High |
@@ -397,11 +397,11 @@ Four failures were found — the most notable being that the phone number field 
 
 ---
 
-### TC_PIM_015 — Phone number field accepts alphabets
+### TC_OHRM_PIM_015 — Phone number field accepts alphabets
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_PIM_015 |
+| **Test Case ID** | TC_OHRM_PIM_015 |
 | **Title** | Verify phone number field only accepts numeric input |
 | **Module** | Employee Management (PIM) |
 | **Priority** | P2 – High |
@@ -427,11 +427,11 @@ Four failures were found — the most notable being that the phone number field 
 
 ---
 
-### TC_PIM_016 — Add emergency contact
+### TC_OHRM_PIM_016 — Add emergency contact
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_PIM_016 |
+| **Test Case ID** | TC_OHRM_PIM_016 |
 | **Title** | Verify emergency contact can be added to an employee profile |
 | **Module** | Employee Management (PIM) |
 | **Priority** | P3 – Medium |
@@ -456,11 +456,11 @@ Four failures were found — the most notable being that the phone number field 
 
 ---
 
-### TC_PIM_017 — Add dependent
+### TC_OHRM_PIM_017 — Add dependent
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_PIM_017 |
+| **Test Case ID** | TC_OHRM_PIM_017 |
 | **Title** | Verify a dependent can be added to an employee record |
 | **Module** | Employee Management (PIM) |
 | **Priority** | P3 – Medium |
@@ -485,11 +485,11 @@ Four failures were found — the most notable being that the phone number field 
 
 ---
 
-### TC_PIM_018 — Delete an employee record
+### TC_OHRM_PIM_018 — Delete an employee record
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_PIM_018 |
+| **Test Case ID** | TC_OHRM_PIM_018 |
 | **Title** | Verify an employee record can be deleted successfully |
 | **Module** | Employee Management (PIM) |
 | **Priority** | P2 – High |
@@ -515,11 +515,11 @@ Four failures were found — the most notable being that the phone number field 
 
 ---
 
-### TC_PIM_019 — Export employee list
+### TC_OHRM_PIM_019 — Export employee list
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_PIM_019 |
+| **Test Case ID** | TC_OHRM_PIM_019 |
 | **Title** | Verify the Export function downloads employee data correctly |
 | **Module** | Employee Management (PIM) |
 | **Priority** | P3 – Medium |
@@ -541,11 +541,11 @@ Four failures were found — the most notable being that the phone number field 
 
 ---
 
-### TC_PIM_020 — [BLOCKED] Bulk import employees via CSV
+### TC_OHRM_PIM_020 — [BLOCKED] Bulk import employees via CSV
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_PIM_020 |
+| **Test Case ID** | TC_OHRM_PIM_020 |
 | **Title** | Verify employees can be bulk imported via CSV upload |
 | **Module** | Employee Management (PIM) |
 | **Priority** | P2 – High |
