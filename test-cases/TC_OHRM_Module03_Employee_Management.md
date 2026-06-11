@@ -1,7 +1,7 @@
 # Test Cases — Module 03: Employee Management (PIM)
 
 **Module:** Employee Management (PIM — Personal Information Management)  
-**Tester:** [Jayanta Das]  
+**Tester:** Jayanta Das  
 **Execution Date:** April 10–15, 2026  
 **Browser:** Chrome 149.0 (primary), Brave 1.91 (cross-check)  
 **Application URL:** https://opensource-demo.orangehrmlive.com  
