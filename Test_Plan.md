@@ -4,7 +4,7 @@
 **Prepared By:** Jayanta Das  
 **Reviewed By:** Self-review  
 **Date Created:** March 1, 2025  
-**Last Updated:** March 8, 2025  
+**Last Updated:** May 8, 2025  
 **Status:** Approved
 
 ---
@@ -40,7 +40,6 @@ The demo environment resets periodically (approximately every hour), which means
 ### 1.3 References
 
 - OrangeHRM Official Documentation: https://www.orangehrm.com/hr-software-features/
-- IEEE 829 Standard for Software Test Documentation (reference only)
 - Application URL: https://opensource-demo.orangehrmlive.com
 
 ---
@@ -118,19 +117,21 @@ The following areas are explicitly excluded from this test cycle:
 
 | Type | Applied? | Notes |
 |---|---|---|
-| Functional Testing | Yes | Core focus of this project |
+| Functionality Testing | Yes | Core focus of this project |
 | Boundary Value Analysis | Yes | Applied to date fields, character limits |
 | Equivalence Partitioning | Yes | Used for login and form inputs |
 | Negative Testing | Yes | Invalid inputs, missing mandatory fields |
 | Exploratory Testing | Yes | Done during initial app walkthrough |
-| UI / Sanity Testing | Yes | Navigation, element visibility |
+| Usability | Yes | Navigation, element visibility |
 | Regression Testing | Partial | Re-ran affected cases after env reset |
+| Performance Testing | Partial | Load and stability of the application |
+| Compatibility Testing | Partial | Across multiple OS and browser versions |
 | Security Testing | Partial | Basic SQL injection and XSS checks only |
 
 ### 4.2 Test Case Design
 
 Test cases were written following this structure:
-- **Test Case ID** — Unique identifier per module (e.g., TC_LGN_001)
+- **Test Case ID** — Unique identifier per module (e.g., TC_OHRM_LGN_001)
 - **Title** — Short description of what is being tested
 - **Prerequisites** — What needs to be true before the test runs
 - **Test Steps** — Clear, numbered, executable steps
@@ -157,7 +158,7 @@ Test cases were written following this structure:
 
 | Component | Specification |
 |---|---|
-| Machine | Dell Inspiron 15, 16GB RAM, i5-12th Gen |
+| Machine | HP Pavilion 15-cc100tx, 8GB RAM, i7-8th Gen |
 | OS (Primary) | Windows 11 Home |
 | OS (Secondary) | macOS Ventura 13.4 |
 | Screen Resolution | 1920 × 1080 |
@@ -166,9 +167,9 @@ Test cases were written following this structure:
 
 | Software | Version |
 |---|---|
-| Google Chrome | 123.0.6312.86 |
-| Mozilla Firefox | 124.0.1 |
-| Application Version | OrangeHRM 5.x (Demo, latest) |
+| Google Chrome | 149.0 |
+| Mozilla Firefox | 1.91 |
+| Application Version | OrangeHRM 5.8 (Demo, latest) |
 
 ### 5.3 Test Accounts
 
@@ -207,14 +208,14 @@ Testing will be considered complete when:
 
 | Phase | Activity | Start Date | End Date |
 |---|---|---|---|
-| Phase 1 | Application exploration and walkthrough | Mar 1, 2025 | Mar 3, 2025 |
-| Phase 2 | Test Plan creation | Mar 4, 2025 | Mar 6, 2025 |
-| Phase 3 | Test case writing | Mar 7, 2025 | Mar 9, 2025 |
-| Phase 4 | Test execution – Login & Dashboard | Mar 10, 2025 | Mar 13, 2025 |
-| Phase 5 | Test execution – Employee Management | Mar 14, 2025 | Mar 20, 2025 |
-| Phase 6 | Test execution – Leave Management | Mar 21, 2025 | Mar 26, 2025 |
-| Phase 7 | Bug reporting and documentation | Mar 10, 2025 | Mar 28, 2025 |
-| Phase 8 | RTM, final review, report prep | Mar 28, 2025 | Apr 2, 2025 |
+| Phase 1 | Application exploration and walkthrough | Mar 1, 2026 | Mar 3, 2026 |
+| Phase 2 | Test Plan creation | Mar 4, 2026 | Mar 6, 2026 |
+| Phase 3 | Test case writing | Mar 7, 2026 | Mar 9, 2026 |
+| Phase 4 | Test execution – Login & Dashboard | Mar 10, 2026 | Mar 13, 2026 |
+| Phase 5 | Test execution – Employee Management | Mar 14, 2026 | Mar 20, 2026 |
+| Phase 6 | Test execution – Leave Management | Mar 21, 2026 | Mar 26, 2026 |
+| Phase 7 | Bug reporting and documentation | Mar 10, 2026 | Mar 28, 2026 |
+| Phase 8 | RTM, final review, report prep | Mar 28, 2026 | Apr 2, 2026 |
 
 ---
 
@@ -223,10 +224,10 @@ Testing will be considered complete when:
 | Deliverable | Location |
 |---|---|
 | Test Plan (this document) | Test_Plan.md |
-| Test Cases – Login | test-cases/TC_Module01_Login.md |
-| Test Cases – Dashboard | test-cases/TC_Module02_Dashboard.md |
-| Test Cases – Employee Management | test-cases/TC_Module03_Employee_Management.md |
-| Test Cases – Leave Management | test-cases/TC_Module04_Leave_Management.md |
+| Test Cases – Login | test-cases/TC_OHRM_Module01_Login.md |
+| Test Cases – Dashboard | test-cases/TC_OHRM_Module02_Dashboard.md |
+| Test Cases – Employee Management | test-cases/TC_OHRM_Module03_Employee_Management.md |
+| Test Cases – Leave Management | test-cases/TC_OHRM_Module04_Leave_Management.md |
 | Bug Report | bug-reports/Bug_Report.md |
 | Requirements Traceability Matrix | RTM.md |
 | Screenshots | screenshots/ |
