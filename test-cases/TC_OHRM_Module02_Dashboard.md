@@ -1,9 +1,9 @@
 # Test Cases — Module 02: Dashboard
 
 **Module:** Dashboard  
-**Tester:** [Your Name]  
-**Execution Date:** March 12–13, 2025  
-**Browser:** Chrome 123.0 (primary), Firefox 124.0 (cross-check)  
+**Tester:** [Jayanta Das]  
+**Execution Date:** March 17–20, 2025  
+**Browser:** Chrome 149.0 (primary), Brave 1.91 (cross-check)  
 **Application URL:** https://opensource-demo.orangehrmlive.com  
 **Total Test Cases:** 8  
 **Pass:** 7 | **Fail:** 1 | **Blocked:** 0
@@ -20,11 +20,11 @@ The Dashboard is the first screen users see after logging in. Testing here focus
 
 ---
 
-### TC_DSH_001 — Dashboard loads after successful login
+### TC_OHRM_DSH_001 — Dashboard loads after successful login
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_DSH_001 |
+| **Test Case ID** | TC_OHRM_DSH_001 |
 | **Title** | Verify Dashboard page loads correctly after login |
 | **Module** | Dashboard |
 | **Priority** | P1 – Critical |
@@ -45,11 +45,11 @@ The Dashboard is the first screen users see after logging in. Testing here focus
 
 ---
 
-### TC_DSH_002 — Left navigation menu is accessible
+### TC_OHRM_002 — Left navigation menu is accessible
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_DSH_002 |
+| **Test Case ID** | TC_OHRM_DSH_002 |
 | **Title** | Verify all main navigation menu items are present and clickable |
 | **Module** | Dashboard |
 | **Priority** | P1 – Critical |
@@ -74,11 +74,11 @@ The Dashboard is the first screen users see after logging in. Testing here focus
 
 ---
 
-### TC_DSH_003 — Quick Launch panel visible and functional
+### TC_OHRM_DSH_003 — Quick Launch panel visible and functional
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_DSH_003 |
+| **Test Case ID** | TC_OHRM_DSH_003 |
 | **Title** | Verify Quick Launch panel shows shortcuts and they navigate correctly |
 | **Module** | Dashboard |
 | **Priority** | P2 – High |
@@ -102,11 +102,11 @@ The Dashboard is the first screen users see after logging in. Testing here focus
 
 ---
 
-### TC_DSH_004 — Time at Work widget displays data
+### TC_OHRM_DSH_004 — Time at Work widget displays data
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_DSH_004 |
+| **Test Case ID** | TC_OHRM_DSH_004 |
 | **Title** | Verify Time at Work widget shows current day's work time correctly |
 | **Module** | Dashboard |
 | **Priority** | P3 – Medium |
@@ -133,11 +133,11 @@ The Dashboard is the first screen users see after logging in. Testing here focus
 
 ---
 
-### TC_DSH_005 — My Actions widget is present
+### TC_OHRM_DSH_005 — My Actions widget is present
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_DSH_005 |
+| **Test Case ID** | TC_OHRM_DSH_005 |
 | **Title** | Verify My Actions widget is visible on Dashboard |
 | **Module** | Dashboard |
 | **Priority** | P3 – Medium |
@@ -158,11 +158,11 @@ The Dashboard is the first screen users see after logging in. Testing here focus
 
 ---
 
-### TC_DSH_006 — Profile dropdown menu is accessible
+### TC_OHRM_DSH_006 — Profile dropdown menu is accessible
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_DSH_006 |
+| **Test Case ID** | TC_OHRM_DSH_006 |
 | **Title** | Verify user profile dropdown in header works correctly |
 | **Module** | Dashboard |
 | **Priority** | P2 – High |
@@ -184,11 +184,11 @@ The Dashboard is the first screen users see after logging in. Testing here focus
 
 ---
 
-### TC_DSH_007 — Admin module is accessible from navigation
+### TC_OHRM_DSH_007 — Admin module is accessible from navigation
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_DSH_007 |
+| **Test Case ID** | TC_OHRM_DSH_007 |
 | **Title** | Verify Admin menu item opens the Administration module |
 | **Module** | Dashboard |
 | **Priority** | P2 – High |
@@ -209,11 +209,11 @@ The Dashboard is the first screen users see after logging in. Testing here focus
 
 ---
 
-### TC_DSH_008 — Dashboard page title and branding
+### TC_OHRM_DSH_008 — Dashboard page title and branding
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_DSH_008 |
+| **Test Case ID** | TC_OHRM_DSH_008 |
 | **Title** | Verify browser tab title and page branding are correct |
 | **Module** | Dashboard |
 | **Priority** | P4 – Low |
