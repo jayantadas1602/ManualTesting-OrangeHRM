@@ -1,9 +1,9 @@
 # Test Cases — Module 04: Leave Management
 
 **Module:** Leave Management  
-**Tester:** [Your Name]  
-**Execution Date:** March 21–26, 2025  
-**Browser:** Chrome 123.0 (primary), Firefox 124.0 (cross-check)  
+**Tester:** Jayanta Das  
+**Execution Date:** May 21–26, 2026  
+**Browser:** Chrome 149.0 (primary), Brave 1.91 (cross-check)  
 **Application URL:** https://opensource-demo.orangehrmlive.com  
 **Total Test Cases:** 15  
 **Pass:** 11 | **Fail:** 3 | **Blocked:** 1
@@ -22,11 +22,11 @@ One important note: leave approval notification emails and workflow-based escala
 
 ---
 
-### TC_LVE_001 — Navigate to Leave module
+### TC_OHRM_LVE_001 — Navigate to Leave module
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_LVE_001 |
+| **Test Case ID** | TC_OHRM_LVE_001 |
 | **Title** | Verify the Leave module is accessible from the navigation menu |
 | **Module** | Leave Management |
 | **Priority** | P1 – Critical |
@@ -46,11 +46,11 @@ One important note: leave approval notification emails and workflow-based escala
 
 ---
 
-### TC_LVE_002 — Leave types are listed in the system
+### TC_OHRM_LVE_002 — Leave types are listed in the system
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_LVE_002 |
+| **Test Case ID** | TC_OHRM_LVE_002 |
 | **Title** | Verify configured leave types are visible in the Leave Types page |
 | **Module** | Leave Management |
 | **Priority** | P2 – High |
@@ -70,11 +70,11 @@ One important note: leave approval notification emails and workflow-based escala
 
 ---
 
-### TC_LVE_003 — Apply for leave with valid future dates
+### TC_OHRM_LVE_003 — Apply for leave with valid future dates
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_LVE_003 |
+| **Test Case ID** | TC_OHRM_LVE_003 |
 | **Title** | Verify a leave application can be submitted with valid future dates |
 | **Module** | Leave Management |
 | **Priority** | P1 – Critical |
@@ -98,11 +98,11 @@ One important note: leave approval notification emails and workflow-based escala
 
 ---
 
-### TC_LVE_004 — Apply for leave with a past date
+### TC_OHRM_LVE_004 — Apply for leave with a past date
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_LVE_004 |
+| **Test Case ID** | TC_OHRM_LVE_004 |
 | **Title** | Verify that applying for leave with a past date triggers a warning or is blocked |
 | **Module** | Leave Management |
 | **Priority** | P2 – High |
@@ -129,11 +129,11 @@ One important note: leave approval notification emails and workflow-based escala
 
 ---
 
-### TC_LVE_005 — Apply for leave with end date before start date
+### TC_OHRM_LVE_005 — Apply for leave with end date before start date
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_LVE_005 |
+| **Test Case ID** | TC_OHRM_LVE_005 |
 | **Title** | Verify validation when end date is earlier than start date |
 | **Module** | Leave Management |
 | **Priority** | P2 – High |
@@ -156,11 +156,11 @@ One important note: leave approval notification emails and workflow-based escala
 
 ---
 
-### TC_LVE_006 — Apply for leave with overlapping dates
+### TC_OHRM_LVE_006 — Apply for leave with overlapping dates
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_LVE_006 |
+| **Test Case ID** | TC_OHRM_LVE_006 |
 | **Title** | Verify that overlapping leave applications are handled correctly |
 | **Module** | Leave Management |
 | **Priority** | P2 – High |
@@ -169,7 +169,7 @@ One important note: leave approval notification emails and workflow-based escala
 
 **Steps:**
 
-1. First, submit a leave application for next Monday to Friday (use TC_LVE_003 as a base)
+1. First, submit a leave application for next Monday to Friday (use TC_OHRM_LVE_003 as a base)
 2. Navigate to Leave → Apply again
 3. Select the same leave type
 4. Enter Wednesday of next week as From Date
@@ -188,11 +188,11 @@ One important note: leave approval notification emails and workflow-based escala
 
 ---
 
-### TC_LVE_007 — Apply for single day leave
+### TC_OHRM_LVE_007 — Apply for single day leave
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_LVE_007 |
+| **Test Case ID** | TC_OHRM_LVE_007 |
 | **Title** | Verify leave can be applied for a single day (same From and To date) |
 | **Module** | Leave Management |
 | **Priority** | P2 – High |
@@ -214,16 +214,16 @@ One important note: leave approval notification emails and workflow-based escala
 
 ---
 
-### TC_LVE_008 — Cancel a pending leave application
+### TC_OHRM_LVE_008 — Cancel a pending leave application
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_LVE_008 |
+| **Test Case ID** | TC_OHRM_LVE_008 |
 | **Title** | Verify an employee can cancel a pending leave application |
 | **Module** | Leave Management |
 | **Priority** | P2 – High |
 | **Prerequisites** | At least one leave application exists in "Pending" status |
-| **Test Data** | Use the leave application created in TC_LVE_003 |
+| **Test Data** | Use the leave application created in TC_OHRM_LVE_003 |
 
 **Steps:**
 
@@ -240,11 +240,11 @@ One important note: leave approval notification emails and workflow-based escala
 
 ---
 
-### TC_LVE_009 — View leave list with filters
+### TC_OHRM_LVE_009 — View leave list with filters
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_LVE_009 |
+| **Test Case ID** | TC_OHRM_LVE_009 |
 | **Title** | Verify Leave List can be filtered by date range and status |
 | **Module** | Leave Management |
 | **Priority** | P3 – Medium |
@@ -266,11 +266,11 @@ One important note: leave approval notification emails and workflow-based escala
 
 ---
 
-### TC_LVE_010 — Apply for leave without selecting leave type
+### TC_OHRM_LVE_010 — Apply for leave without selecting leave type
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_LVE_010 |
+| **Test Case ID** | TC_OHRM_LVE_010 |
 | **Title** | Verify validation error when Leave Type is not selected |
 | **Module** | Leave Management |
 | **Priority** | P2 – High |
@@ -292,11 +292,11 @@ One important note: leave approval notification emails and workflow-based escala
 
 ---
 
-### TC_LVE_011 — Apply for leave without entering dates
+### TC_OHRM_LVE_011 — Apply for leave without entering dates
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_LVE_011 |
+| **Test Case ID** | TC_OHRM_LVE_011 |
 | **Title** | Verify validation error when both date fields are empty |
 | **Module** | Leave Management |
 | **Priority** | P2 – High |
@@ -318,11 +318,11 @@ One important note: leave approval notification emails and workflow-based escala
 
 ---
 
-### TC_LVE_012 — Leave balance check
+### TC_OHRM_LVE_012 — Leave balance check
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_LVE_012 |
+| **Test Case ID** | TC_OHRM_LVE_012 |
 | **Title** | Verify leave balance is displayed correctly for each leave type |
 | **Module** | Leave Management |
 | **Priority** | P2 – High |
@@ -344,11 +344,11 @@ One important note: leave approval notification emails and workflow-based escala
 
 ---
 
-### TC_LVE_013 — Apply leave button remains clickable with empty form
+### TC_OHRM_LVE_013 — Apply leave button remains clickable with empty form
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_LVE_013 |
+| **Test Case ID** | TC_OHRM_LVE_013 |
 | **Title** | Verify the Apply button does not remain enabled when mandatory fields are empty |
 | **Module** | Leave Management |
 | **Priority** | P3 – Medium |
@@ -374,11 +374,11 @@ One important note: leave approval notification emails and workflow-based escala
 
 ---
 
-### TC_LVE_014 — View Leave Entitlements
+### TC_OHRM_LVE_014 — View Leave Entitlements
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_LVE_014 |
+| **Test Case ID** | TC_OHRM_LVE_014 |
 | **Title** | Verify the Leave Entitlements page shows configured entitlements |
 | **Module** | Leave Management |
 | **Priority** | P3 – Medium |
@@ -398,11 +398,11 @@ One important note: leave approval notification emails and workflow-based escala
 
 ---
 
-### TC_LVE_015 — [BLOCKED] Leave approval email notification
+### TC_OHRM_LVE_015 — [BLOCKED] Leave approval email notification
 
 | Field | Details |
 |---|---|
-| **Test Case ID** | TC_LVE_015 |
+| **Test Case ID** | TC_OHRM_LVE_015 |
 | **Title** | Verify the leave manager receives an email notification when leave is applied |
 | **Module** | Leave Management |
 | **Priority** | P2 – High |
