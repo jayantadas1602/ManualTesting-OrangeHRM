@@ -168,7 +168,7 @@ Test cases were written following this structure:
 | Software | Version |
 |---|---|
 | Google Chrome | 149.0 |
-| Mozilla Firefox | 1.91 |
+| Brave | 1.91 |
 | Application Version | OrangeHRM 5.8 (Demo, latest) |
 
 ### 5.3 Test Accounts
