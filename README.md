@@ -20,7 +20,7 @@
 |---|---|
 | **Application** | OrangeHRM Open Source |
 | **URL** | https://opensource-demo.orangehrmlive.com |
-| **Version** | OrangeHRM 5.x (Demo) |
+| **Version** | OrangeHRM 5.8 (Demo) |
 | **Credentials** | Admin / admin123 |
 | **Type** | Web-based HRM System |
 
@@ -91,7 +91,7 @@ This project was done as part of my QA portfolio to demonstrate my ability to:
 ## Test Environment
 
 - **OS:** Windows 11 (primary), macOS Ventura (cross-browser check)
-- **Browsers:** Chrome 123.0, Firefox 124.0
+- **Browsers:** Chrome 149.0, Brave 1.91
 - **Network:** Standard broadband (no VPN)
 - **Screen Resolution:** 1920×1080
 - **Device:** Desktop
@@ -120,6 +120,5 @@ This project was done as part of my QA portfolio to demonstrate my ability to:
 
 **Author:** Jayanta Das  
 **Role:** QA Engineer (Manual + Automation)  
-**LinkedIn:** [linkedin.com/in/jayanta99](www.linkedin.com/in/jayanta99)  
+**LinkedIn:** [linkedin.com/in/jayanta99](https://www.linkedin.com/in/jayanta99/)  
 **GitHub:** [https://github.com/jayantadas1602](https://github.com/jayantadas1602)
-**Testing Period:** March 10 – March 28, 2025
