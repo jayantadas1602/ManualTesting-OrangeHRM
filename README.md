@@ -42,11 +42,11 @@ This project was done as part of my QA portfolio to demonstrate my ability to:
 
 | # | Module | Test Cases | Pass | Fail | Blocked |
 |---|---|---|---|---|---|
-| 1 | Login & Authentication | 12 | 9 | 2 | 1 |
+| 1 | Login & Authentication | 13 | 10 | 2 | 1 |
 | 2 | Dashboard | 8 | 7 | 1 | 0 |
 | 3 | Employee Management (PIM) | 20 | 15 | 4 | 1 |
 | 4 | Leave Management | 15 | 11 | 3 | 1 |
-| **Total** | | **55** | **42** | **10** | **3** |
+| **Total** | | **55** | **43** | **10** | **3** |
 
 ---
 
@@ -67,10 +67,10 @@ This project was done as part of my QA portfolio to demonstrate my ability to:
 | Document | Description |
 |---|---|
 | [Test Plan](./Test_Plan.md) | Project scope, strategy, schedule, risks, and entry/exit criteria |
-| [Test Cases – Login](./test-cases/TC_Module01_Login.md) | 12 test cases for authentication flows |
-| [Test Cases – Dashboard](./test-cases/TC_Module02_Dashboard.md) | 8 test cases for the main dashboard |
-| [Test Cases – Employee Management](./test-cases/TC_Module03_Employee_Management.md) | 20 test cases for PIM module |
-| [Test Cases – Leave Management](./test-cases/TC_Module04_Leave_Management.md) | 15 test cases for leave workflows |
+| [Test Cases – Login](./test-cases/TC_OHRM_Module01_Login.md) | 12 test cases for authentication flows |
+| [Test Cases – Dashboard](./test-cases/TC_OHRM_Module02_Dashboard.md) | 8 test cases for the main dashboard |
+| [Test Cases – Employee Management](./test-cases/TC_OHRM_Module03_Employee_Management.md) | 20 test cases for PIM module |
+| [Test Cases – Leave Management](./test-cases/TC_OHRM_Module04_Leave_Management.md) | 15 test cases for leave workflows |
 | [Bug Report](./bug-reports/Bug_Report.md) | All 15 defects with steps, severity, and status |
 | [RTM](./RTM.md) | Requirements Traceability Matrix |
 
@@ -80,7 +80,7 @@ This project was done as part of my QA portfolio to demonstrate my ability to:
 
 | Tool | Purpose |
 |---|---|
-| Browser (Chrome 123, Firefox 124) | Test execution |
+| Browser (Chrome 149.0, Brave 1.91) | Test execution |
 | Google Sheets | Test case tracking |
 | ShareX | Screenshots and screen recording |
 | JIRA (simulated) | Bug ID reference format |
