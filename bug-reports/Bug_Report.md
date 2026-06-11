@@ -1,11 +1,11 @@
 # Bug Report — OrangeHRM Manual Testing Project
 
 **Project:** OrangeHRM Manual Testing  
-**Reported By:** [Jayanta Das]       
+**Reported By:** Jayanta Das       
 **Total Bugs:** 7  
 **Critical:** 1 | **High:** 1 | **Medium:** 3 | **Low:** 2  
 **Application URL:** https://opensource-demo.orangehrmlive.com  
-**Environment:** Chrome 123.0 / Windows 11
+**Environment:** Chrome 149.0 / Windows 11
 
 ---
 
@@ -35,10 +35,10 @@
 **Module:** Login  
 **Severity:** Medium  
 **Priority:** P3 – Medium  
-**Reported By:** [Jayanta Das]   
+**Reported By:** Jayanta Das   
 **Status:** Open  
-**Related Test Case:** TC_LGN_009  
-**Browser/OS:** Chrome 123.0 / Windows 11
+**Related Test Case:** TC_OHRM_LGN_009  
+**Browser/OS:** Chrome 149.0 / Windows 11
 
 ---
 
@@ -81,10 +81,10 @@ Show a clear error for invalid usernames, or standardise to a generic message li
 **Module:** Login  
 **Severity:** Critical  
 **Priority:** P1 – Critical  
-**Reported By:** [Jayanta Das]   
+**Reported By:** Jayanta Das   
 **Status:** Open  
-**Related Test Case:** TC_LGN_010  
-**Browser/OS:** Chrome 123.0 / Windows 11
+**Related Test Case:** TC_OHRM_LGN_010  
+**Browser/OS:** Chrome 149.0 / Windows 11
 
 ---
 
@@ -131,10 +131,10 @@ Implement account lockout after 5 failed attempts with a 15-minute cooldown. Alt
 **Module:** Dashboard  
 **Severity:** Low  
 **Priority:** P4 – Low  
-**Reported By:** [Jayanta Das]    
+**Reported By:** Jayanta Das    
 **Status:** Open  
-**Related Test Case:** TC_DSH_004  
-**Browser/OS:** Chrome 123.0 / Windows 11
+**Related Test Case:** TC_OHRM_DSH_004  
+**Browser/OS:** Chrome 149.0 / Windows 11
 
 ---
 
@@ -180,10 +180,10 @@ Add a helper message or a direct "Punch In" button inside the widget when no pun
 **Module:** PIM – Employee Management  
 **Severity:** High  
 **Priority:** P2 – High  
-**Reported By:** [Jayanta Das]  
+**Reported By:** Jayanta Das  
 **Status:** Open  
-**Related Test Case:** TC_PIM_005  
-**Browser/OS:** Chrome 123.0 / Windows 11
+**Related Test Case:** TC_OHRM_PIM_005  
+**Browser/OS:** Chrome 149.0 / Windows 11
 
 ---
 
@@ -226,10 +226,10 @@ Add a regex validator on the Employee ID field: `^[a-zA-Z0-9-]*$` (allow alphanu
 **Module:** PIM – Employee Management  
 **Severity:** Medium  
 **Priority:** P3 – Medium  
-**Reported By:** [Jayanta Das]  
+**Reported By:** Jayanta Das  
 **Status:** Open  
-**Related Test Case:** TC_PIM_003  
-**Browser/OS:** Chrome 123.0 / Windows 11
+**Related Test Case:** TC_OHRM_PIM_003  
+**Browser/OS:** Chrome 149.0 / Windows 11
 
 ---
 
@@ -272,10 +272,10 @@ Improve the error message to include the ID that's conflicting: "Employee ID '00
 **Module:** Dashboard  
 **Severity:** Low  
 **Priority:** P4 – Low  
-**Reported By:** [Jayanta Das]   
+**Reported By:** Jayanta Das   
 **Status:** Open  
 **Related Test Case:** N/A (found during exploratory testing)  
-**Browser/OS:** Chrome 123.0 / Windows 11
+**Browser/OS:** Chrome 149.0 / Windows 11
 
 ---
 
@@ -318,10 +318,10 @@ Save widget positions to the user's profile or browser localStorage when they ar
 **Module:** General / Security  
 **Severity:** Medium  
 **Priority:** P3 – Medium  
-**Reported By:** [Jayanta Das]    
+**Reported By:** Jayanta Das    
 **Status:** Open  
 **Related Test Case:** N/A (found during exploratory session)  
-**Browser/OS:** Chrome 123.0 / Windows 11
+**Browser/OS:** Chrome 149.0 / Windows 11
 
 ---
 
